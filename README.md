@@ -1,17 +1,59 @@
-<<<<<<< HEAD
-# NamsteTrips-ReactJs
-NamsteTrips
-=======
-# React + Vite
+# <img src="./public/1.png" alt="NamasteTrips Logo" width="130"/> NamasteTrips – Travel Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Site-Click%20Here-brightgreen?style=for-the-badge)](http://NamasteTrips.surge.sh)
 
-Currently, two official plugins are available:
+NamasteTrips is a responsive **travel website** built with **ReactJS** that helps users explore destinations, view services, and plan trips — all with a clean and minimal UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> e868136 (NmasteTrips)
+- **Responsive Design** – Fully mobile-friendly layout using **Tailwind CSS**.
+- **Modern UI Components** – Built with **React-Bootstrap** and **Material-UI**.
+- **Interactive Icons** – Used **Lucide React Icons** for a beautiful look.
+- **Smooth Navigation** – Implemented with **React Router**.
+- **Deployed on Surge** – Easily accessible via [NamasteTrips.surge.sh](http://NamasteTrips.surge.sh).
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** ReactJS, Tailwind CSS, React-Bootstrap, Material-UI  
+- **Icons:** Lucide React  
+- **Routing:** React Router DOM  
+- **Deployment:** Surge.sh  
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+![s1](./public/screenshots/s1.png)
+
+### ✈️ Destinations
+![s2](./public/screenshots/s2.png)
+
+![s3](./public/screenshots/s3.png)
+
+![s4](./public/screenshots/s4.png)
+
+![s5](./public/screenshots/s5.png)
+
+![s6](./public/screenshots/s6.png)
+
+![s7](./public/screenshots/s7.png)
+
+### 🎥 Footer & Extra Features
+![s8](./public/screenshots/s8.png)
+
+---
+
+## 🏃 Getting Started (Run Locally)
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Akshay1737/NamsteTrips-ReactJs.git
+cd NamsteTrips-ReactJs
+npm install
+npm run dev
