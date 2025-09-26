@@ -1,0 +1,1196 @@
+/* Define global CSS variables */
+
+@import "tailwindcss";
+
+:root {
+  /* Colors */
+  --primary-color: #ffffff;
+  --secondary-color: #F8F8F5;
+  --accent-color: #111827;
+  
+  --btn-color:bg-gradient-to-r from-sky-600 to-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:from-sky-700 hover:to-orange-600 transition-all duration-300;
+
+  /* Font sizes */
+  --font-small: 0.875rem;
+  --font-medium: 1rem;
+  --font-large: 1.25rem;
+  --font-xlarge: 2rem;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+*{
+  margin: auto;
+}
+/*Header section styles */
+.head {
+  position: fixed; /* Keeps it fixed at top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make it full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:80px;
+  padding: 5px 10px;
+  background-color: white; /* Important so content doesn't show through */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow */
+  z-index: 1000; /* Keep it above all content */
+}
+
+
+.head-left{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 25px;
+  padding-bottom: 0px;
+  
+  margin-bottom: 0px;
+  transform: translate(30px,-40px);
+   
+}
+.head-left div img {
+  height: 8rem;
+   transform: translate(0px,-30px);
+  
+}
+.head-left h2{
+  font-weight: bolder;
+}
+#responsive-navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.head-m{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px;
+
+}
+.head-center .NavLink{
+  font-size: 19px;
+  
+}
+ .head-center{
+  padding-right: 12rem;
+ }
+
+
+.head-center .booknow{
+  background-color: rgb(68, 68, 247);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  height: 39px;
+  padding: 5px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 120px;
+  border-radius: 20px;
+  border: 1px solid blue;
+  font-size: 19px;
+}
+.head-center .booknow:hover{
+  background-color: rgb(41, 41, 241) ;
+  color: white;
+}
+
+.head-center{
+  
+    display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+}
+.nav-link:hover{
+  color: blue;
+  box-shadow: none;
+}
+/*Hero section*/
+.hero-d h1{
+  
+  text-align: center;
+  padding: 20px 0px;
+  margin: 1px;
+}
+
+.hero-d p{
+ 
+  color: white;
+  text-align: center;
+  padding:20px 0px;
+  padding-bottom: 40px;
+}
+
+.form-2{
+  background-color: rgb(255, 255, 255);
+
+  margin: 2px;
+  gap: 20px;
+  padding: 10px;
+  color: black;
+}
+.form-2 label,input ,select,input::placeholder{
+   color: black;
+   
+   margin: 1px;
+ 
+   
+}
+
+
+
+.hero-container {
+  position: relative; /* required for overlay */
+  height: 45rem;
+  width: 100%;
+  background: url('./assets/a1.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+;
+}
+
+/* overlay to dim the image */
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* adjust opacity for dimming */
+  z-index: 1;
+}
+
+/* content above overlay */
+.hero-container > * {
+  position: relative;
+  z-index: 2;
+  color: white; /* text color */
+  text-align: center;
+}
+
+/* service section */
+.hh{
+ 
+  padding: 5px;
+  height: 100%;
+  
+}
+.group{
+   
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 10px;
+}
+/* Container ul styling */
+.ul {
+  list-style: none;           /* Remove default bullets */
+  padding: 0;                 /* Remove default padding */
+  margin: 0;                  /* Remove default margin */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;                /* Space between list items */
+}
+
+/* Individual li styling */
+.li {
+  display: flex;
+  align-items: center;        /* Center bullet and text vertically */
+  gap: 0.75rem;               /* Space between bullet and text */
+  padding: 0.5rem 0.75rem;    /* Some padding for better touch/click area */
+  border-radius: 0.5rem;      /* Rounded corners for better look */
+  background-color: #f3f4f6;  /* Light gray background */
+  transition: all 0.2s ease;
+  font-weight: 500;
+  color: #374151;
+}
+.service{
+  
+ display: flex;
+ text-align: center;
+ flex-direction: column;
+ gap: 15px;
+ padding: 10px;
+ 
+}
+.service p{
+  line-height: 1.3;
+}
+
+
+/* Bullet inside li */
+.li div {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #0284c7;  /* Blue bullet */
+  border-radius: 50%;         /* Make it circular */
+  flex-shrink: 0;             /* Prevent shrinking */
+}
+
+
+/*contact section */
+
+.contact-container{
+ 
+
+  padding-top: 85px;
+  text-align: center;
+  
+}
+
+.contact-col{
+  
+  height: 75%;
+ 
+}
+.contact-row{
+  
+   height: 90%;
+   
+}
+.social{
+  height: 5rem;
+  width:5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
+  
+
+}
+.social1{
+   height: 3rem;
+   width: 3rem;
+  
+  
+}
+.contact-row h1{
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-top: 15px;
+}
+.contact-row h1>span{
+  color: rgb(68, 68, 247);
+}
+.contact-row .p3{
+  font-size: 1.3rem;
+  
+}
+
+.whats-a{
+  padding-top: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.input-1{
+ 
+  width: 18rem;
+}
+
+
+/*Footer section */
+.footer {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 2rem 1rem; /* instead of fixed height, makes it responsive */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.row-1 {
+  display: flex;
+  align-items: stretch; /* this ensures all .col-1 match height of tallest */
+  justify-content: space-evenly;
+  gap: 35px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid #c1c1c1c1;
+}
+
+
+.col-1 {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* left-align everything */
+  justify-content: flex-start; /* top-align text instead of center */
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1; /* makes all columns equal width */
+  text-align: center;
+}
+
+
+.col-1 .logo12 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  
+  
+  padding: 0px;
+  gap: 10px;
+}
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-link .NavLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link .NavLink:hover {
+  color: #facc15; /* yellow hover effect for contrast */
+}
+.col-1 .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       /* vertical alignment for icons & text */
+  justify-content: flex-start; /* left-align text for a clean footer look */
+  padding: 6px 35px;
+  gap: 10px;                 /* equal spacing between icon & text */
+  width: 100%;
+  font-size: 0.95rem;        /* consistent text size */
+  line-height: 1.4;          /* better text readability */
+  color: #f1f1f1;    
+  gap: 8px;        /* light text for dark footer */
+  text-align: center;
+  line-height: 1.1;
+}
+
+.col-1 .info img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;       /* keeps icon aspect ratio */
+  flex-shrink: 0;            /* prevents icons from shrinking */
+  filter: brightness(0) invert(1); /* makes icons white if they are dark */
+}
+
+.col-1 .info p {
+  margin: 0;                 /* removes default spacing */
+  text-align: left;
+  flex: 1;                   /* makes text take remaining space */
+}
+.media{
+  gap: 20px;
+}
+
+
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 1rem auto 0;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ccc;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+  gap: 80px;
+}
+
+/* Left side text */
+.copy p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Right side links */
+.policies {
+  display: flex;
+ 
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.policies a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.policies a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* ===== FOOTER STYLES ===== */
+
+.footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer .col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+    text-align: center;
+
+}
+
+.footer .logo12 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .logo12 h2 {
+  font-size: 1.5rem;
+}
+
+.footer p {
+  color: #ccc;
+  margin: 0;
+}
+
+.footer  .nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.footer .NavLink {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer .NavLink:hover {
+  color: #ff6600;
+}
+
+.footer .media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.footer .media a:hover {
+  background-color: #ff6600;
+}
+
+.footer .info {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer .policies {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.footer .policies a,
+.footer .policies p {
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.footer .policies a:hover,
+.footer .policies p:hover {
+  color: #ff6600;
+}
+
+/* ===== MEDIA QUERY FOR MOBILE ===== */
+@media (max-width: 768px) {
+  .row-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  
+  }
+
+
+  .footer .logo12 {
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+  #col1{
+    display: none;
+  }
+
+  .footer .media {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer .info {
+    justify-content: center;
+   
+  align-items: flex-start;
+  gap: 8px;
+  margin-right: 2px;
+   margin-left: 30px;
+   padding-left: 3.5rem;
+}
+  
+
+  .row-2 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    
+  }
+
+  .footer .policies {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+  }
+}
+
+
+
+/* media queries */
+/* Mobile (<768px) */
+/* Mobile view */
+@media (max-width: 768px) {
+  .head-center {
+    display: none; /* hide by default */
+    flex-direction: column;
+    position: absolute; /* dropdown below header */
+    top: 60px; /* height of your header */
+    left: 0;
+    width: 100%; /* full width of header */
+    background-color: white;
+    padding: 10px 0;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  .head-center.active {
+    display: flex; /* show when active */
+  }
+
+  .head-center .NavLink 
+  {
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+   .head-center .booknow{
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+   }
+
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 10000;
+    
+  }
+  .head-left{
+     transform: translate(-25px,-30px);
+  }
+  .head-left div img {
+  height: 5.5rem;
+   transform: translate(5px,-15px);
+  
+}
+    /*hero section*/
+    .hero-d h1{
+  
+  
+  padding: 10px 0px;
+}
+
+.hero-d p{
+  
+  
+  padding:10px 0px;
+  padding-bottom: 20px;
+}
+.form-2{
+  background-color: rgb(255, 255, 255);
+
+  margin: 2px;
+  gap: 20px;
+  padding: 10px;
+  color: black;
+}
+.form-2 label,input ,select,input::placeholder{
+   color: black;
+   
+   margin: 1px;
+ 
+   
+}
+
+.hero-form{
+
+  height: 50%;
+}
+.hero-container{
+  height: 100%;
+}
+.form-1 {
+  height: 50%;
+}
+
+/*conatct section*/
+.contact-container {
+    padding: 30px 10px;
+    padding-top: 85px;
+  }
+
+  .contact-row {
+    
+    padding: 15px;
+  }
+
+  .contact-col {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-row h1 {
+    font-size: 2rem;
+  }
+
+  .contact-row .p3 {
+    font-size: 1rem;
+  }
+
+  .social {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .social1 {
+    height: 2rem;
+    width: 2rem;
+  }
+
+
+.contact-row h1>span{
+  color: rgb(68, 68, 247);
+}
+
+.whats-a{
+  padding-top: 19px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.input-1{
+  
+  width: 12rem;
+}
+
+
+}
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+
+
+/*destination section*/
+.desti-1{
+
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 15px;
+padding-top: 65px;
+}
+.desti-2{
+  
+  padding: 0px;
+  height: 100%;
+  
+}
+.desti-4{
+
+  padding: 20px;
+  
+}
+
+.desti-3 img{
+ 
+  zoom: 1.1;
+  height: 15rem;
+  width: 23rem;
+}
+.desti-5{
+  
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  height: 5rem;
+  
+}
+.desti-6{
+  
+  padding: 0px 15px 5px 15px;
+  text-align: left;
+}
+
+.desti-7{
+  
+  padding: 5px;
+  
+}
+
+.desti-8 {
+  
+  padding: 5px;
+  display: flex;
+  flex-direction: column; /* Horizontal layout */
+  justify-content: flex-start; /* ✅ Align children to the left */
+  align-items: center; /* ✅ Align vertically centered (optional) */
+  gap: 10px; /* Space between children */
+  text-align: left;
+  
+}
+.desti-9{
+  width: 12rem;
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-top: 12px;
+
+  
+  
+}
+.desti-btn{
+  padding: 25px;
+}
+
+/*destination section responsiveness*/
+/* ===========================
+   📱 Responsive Destinations Section
+   =========================== */
+@media (max-width: 768px) {
+  /* Section padding smaller on mobile */
+  #destinations {
+    padding: 3rem 0rem;
+  }
+
+  /* Destination cards take full width with smaller spacing */
+  .desti-4 {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  /* Card image should not overflow */
+  .desti-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Card content spacing smaller */
+  .desti-5 h3 {
+    font-size: 1.1rem;
+  }
+
+  .desti-6 {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Highlights chips wrap nicely on small screens */
+  .desti-8 {
+    justify-content: flex-start; /* Left align tags */
+    gap: 0.5rem;
+  }
+
+  .desti-8 span {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  /* CTA button full width on mobile */
+  .desti-9 {
+    display: block;
+    width: 70%;
+    text-align: center;
+    
+    margin-left: 33px;
+    padding: 3px;
+    
+  }
+
+  /* View All Button Centered & Smaller */
+  .desti-btn button {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    
+  }
+
+  /* Title and paragraph center alignment */
+  .desti-1 h2 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .desti-1 p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+  /*About section */
+
+  .about-1{
+    
+    padding: 10px;
+  }
+  
+  .about-2{
+   
+    padding: 10px;
+  }
+  
+  .about-3{
+    
+    padding: 20px 0px;
+  }
+  
+  
+  .about-3 p{
+   
+    padding: 25px 10px ;
+    line-height: 1.3;
+    text-align: left;
+  }
+  
+  .about-4{
+ 
+    padding: 5px;
+  }
+  
+  .about-5{
+    
+    padding: 5px;
+  }
+  
+  
+  .about-5 p,h3{
+  
+    padding-left: 15px;
+    margin-left: 10px;
+  }
+   .abot{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+     
+      text-align: left;
+      justify-content: left;
+    margin: 0;
+   }
+   .abot-btn{
+    margin-top: 25px;
+    margin-left: 5px;
+   }
+   .abot p,h3{
+    margin: 0;
+    padding: 0px 15px;
+     
+    
+   }
+
+   /* 📱 About Section Mobile Responsive */
+@media (max-width: 768px) {
+  /* Main container smaller padding */
+  .about-1 {
+    padding: 5px;
+  }
+
+  /* Grid becomes single column (Tailwind already does this, but we enforce spacing) */
+  .about-2 {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Title smaller for mobile screens */
+  .about-3 h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  /* Paragraph font-size smaller + centered */
+  .about-3 p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px 5px;
+    line-height: 1.5;
+  }
+
+  /* Step-by-step boxes stacked with more space */
+  .about-4 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Each step aligned left but with bigger touch target spacing */
+  .about-5 {
+    padding: 10px;
+    border-radius: 10px;
+    background: #f9fafb;
+  }
+
+  /* Number circles center aligned for mobile */
+  .about-5 .abot:first-child {
+    margin-right: 10px;
+  }
+
+  /* Button takes full width on small screens */
+  .abot-btn {
+    margin: 20px auto 0 auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Image becomes full-width */
+  .about-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  /* Floating badge under image slightly adjusted for mobile */
+  .about-2 .absolute {
+    left: 50%;
+    bottom: -1.5rem;
+    transform: translateX(-50%);
+    padding: 1rem;
+  }
+
+  /* Stats grid becomes 2 columns for mobile */
+  #about .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+  }
+
+  /* Stats number smaller for mobile */
+  #about .grid p.text-3xl {
+    font-size: 1.5rem;
+  }
+  .abo-6{
+      
+      padding-top: 45px;
+  }
+}
+
+
+
+/*Testimonals section */
+.test{
+
+  height: 100%;
+}
+.test-1{
+ 
+  text-align: center;
+  padding: 10px;
+}
+.test-1 p{
+  
+  text-align: center;
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  line-height: 1.2;
+}
+
+.test-3{
+ 
+ 
+ 
+ height: 100%;
+  
+}
+.test-4{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 9rem;
+    padding: 5px 15px;
+ 
+}
+.test-5{
+  
+   padding: 5px 15px;
+}
+
+.test-6{
+ 
+   padding: 10px 15px;
+
+ 
+  gap: 0px;
+  padding-right: 5rem;
+}
+
+ .test-btn{
+  margin-top: 20px;
+ }
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .test {
+    padding: 0 10px;
+  }
+
+  .test-1 h2 {
+    font-size: 1.75rem; /* smaller heading */
+    line-height: 1.3;
+  }
+
+  .test-1 p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .test-3 {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .test-4 {
+    gap: 1rem; /* reduce huge gap */
+    padding: 5px 10px;
+  }
+
+  .test-5 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 5px 10px;
+  }
+
+  .test-6 {
+    padding: 10px;
+    padding-right: 1rem; /* reduce right padding */
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .test-6 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .test-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* 📱 Extra Small Devices (<= 480px) */
+@media (max-width: 480px) {
+  .test-1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .test-4 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .test-6 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .test-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    width: 45%;
+    
+  }
+}
